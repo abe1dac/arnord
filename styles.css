@@ -1,0 +1,362 @@
+body{
+    width: 100%;
+    background-color:aquamarine;
+}
+#header{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px; 
+    box-shadow: 10px 10px 34px ;
+    width:auto;
+    /*to make the to p position sticky */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+    /*for hover purposes */
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    color: #455;
+    transition: 0.3s ease;
+    
+}
+#navbar li a:hover,
+#navbar li a.active  {  
+    color: rgb(182, 11, 19); 
+}
+/* to make the link active when hovering the headers and show ur position */
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(182, 11, 19);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-self:center;
+}
+
+/* body */
+#hero{
+    background-image: url(images/eepw.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 90vh;
+    width: 100%;
+    background-position: top 20 right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px ;
+}
+#hero h1{
+     color: rgb(16, 179, 124);
+}
+#hero button {
+    cursor: pointer;
+    background-color: chocolate;
+    font-weight: 700;
+    border: none;
+
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px;
+    border: 2px solid #cce7d0;
+    border-radius: 4px;
+    margin: 20px 0 ;
+}
+#feature .fe-box h6{
+    background-color: burlywood;
+    padding: 9px 8px 6px 8px; 
+    color: darkcyan;  
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px ;
+}
+#feature .fe-box img{
+    width: 100%;
+     margin-bottom: 10px ;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: darkmagenta;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: rgb(184, 157, 8);
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: rgb(51, 18, 196);
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: rgb(12, 145, 63);
+}
+
+
+
+#products{
+    text-align: center;  /*centre */
+}
+#products h2{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+#products .containers{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#products .pro{
+    width: 25px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px;
+    margin: 15px 0px;
+    transition: 0.2s ease;
+}
+#products .pro img{
+    width: 120px;
+    border-radius: 20px;
+}
+#products .pro:hover{
+     box-shadow: 15px 15px 15px;
+}
+#products .pro .des {
+    text-align: left;
+}
+#products .pro .des span {
+       color: rgb(235, 137, 9);
+       font-size: 20px;
+}
+#products .pro .des h5 {
+    color: black;
+    font-size: 15px;
+
+}
+#products .pro .des h4{
+    font-size: 20px;
+    font-weight: 200px;
+    color: rgb(24, 89, 185);
+}
+ .section-m1{
+    margin: 40px 0px;
+ }
+ #banner {
+   background-image: url(images/Screenshot\ \(141\).png);
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   height: 40vh;
+   width: 100%;
+ }
+ #banner h4{
+     color: black;
+     font-size: larger;
+ }
+ #banner h2 span{
+    color: firebrick;
+    font-weight: bold;
+ }
+ button.normal{
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20pxpx;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+ }
+ button.normal:hover{
+    background-color: green;
+ }
+  
+ #sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ #sm-banner .banner-box{
+    background-image: url(images/apex\ 40.jpg);
+    min-width: 500px;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+ }
+ #sm-banner .banner-box2{
+    background-image: url(images/download\ \(1\).jpg);
+
+ }
+ #sm-banner h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+ }
+ #sm-banner h2{
+    color: aliceblue;
+    font-size: larger;
+ }
+ #sm-banner span{
+    color: #fbfbfc;
+    font-size: larger;
+ }
+ #banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+ }
+ #banner3 .banner-box{
+    background-image: url(images/apex\ 40.jpg);
+    min-width: 30%;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+ }
+ #banner3 .banner-box2{
+    background-image: url(images/Screenshot\ \(141\).png);
+ }
+ #banner3 .banner-box3{
+    background-image: url(images/asd.jpg);
+ }
+ #banner3 h2{
+    color: aliceblue;
+    font-size: x-large;
+ }
+ #banner3 h3{
+    color: red;
+    font-size: larger;
+
+ }
+ #newslater{
+    background-image: url(images/download\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+ }
+ #newslater .newsform{
+   align-items: center;
+   display: flex;
+   width: 40%;
+ }
+ #newslater input{
+    height: 3.2em;
+    width: 100%;
+    padding: 0 1.2em;
+ }
+ #newslater button{
+    height: 3.2em;
+    white-space: nowrap;
+ }
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+ }
+ footer p{
+    margin-bottom: 8px;
+ }
+ footer a{
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+ }
+ footer .copyright {
+    width: 100%;
+    text-align: center;
+ }
+
+ @media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color:aquamarine;
+        box-shadow: 0 40px 60px;
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+         margin-bottom: 10px;
+    }
+    #mobile{
+        display: flex;
+        align-self:center;
+        
+    }
+    #mobile i{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+}
+ 
